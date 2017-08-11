@@ -18,13 +18,10 @@
 
 \normalfont
 \title{Recent Advances in Potentiometric Scanning Electrochemical Microscopy}
-\subtitle{PhD Thesis submitted for final defense}
+\subtitle{9$^{th}$ Workshop on Scanning Electrochemical Microscopy and Related Techniques, Warsaw}
 \author
-{author:\\
-András Kiss\\
-\hfill \\
-supervisor:\\
-prof. Géza Nagy}
+{\underline{András Kiss}, Géza Nagy\\}
+
 
 \institute
 {
@@ -34,7 +31,7 @@ prof. Géza Nagy}
   \hfill \\
 
   \includegraphics[width=0.14\textwidth]{pte_logo.eps}\\
-  June 16, 2017
+  August 16, 2017
 }
 
 \date[]
@@ -46,40 +43,9 @@ prof. Géza Nagy}
 \begin{frame}
 	\centering
 	\includegraphics[width=0.6\textwidth]{secm.eps}
-	\frametitle{Potentiometric \underline{S}canning \underline{E}lectro\underline{c}hemical \underline{M}icroscopy}
-	\framesubtitle{A Scanning Probe Microscopic technique}
-
+	\frametitle{Potentiometric SECM}
 \end{frame}
 
-
-\begin{frame}
-\frametitle{Ion-selective micropipettes}
-\framesubtitle{As SECM probes}
-\begin{columns}[T] % align columns
-\begin{column}{.48\textwidth}
-
-\centering
-\includegraphics[width=0.9\textwidth]{liquid.jpg}
-\end{column}%
-\hfill%
-\begin{column}{.48\textwidth}
-%\color{blue}\rule{\linewidth}{4pt}
-\centering
-
-\includegraphics[width=0.8\textwidth]{Valinomycin.eps}
-
-Valinomycin
-\vfill
-
-\footnotesize
-\begin{equation*}
-        E=E^\theta + \frac{RT}{z_iF} \ln \left [ a_i + \sum_{j} \left ( k_{ij}a_j^{z_i/z_j} \right ) \right ]
-        \end{equation*}
-\normalsize
-Nikolsky--equation
-\end{column}%
-\end{columns}
-\end{frame}
 
 \begin{frame}
 	\frametitle{The problem with potentiometric SECM} 
@@ -156,54 +122,10 @@ Solid contact micropipettes as SECM probes.
 \end{center}
 \end{frame}
 
-\begin{frame}
-\frametitle{Comparison of the electrodes' resistance}
-\framesubtitle{Voltage divider method and result}
-\begin{center}
-\includegraphics[width=0.7\textwidth]{divider_switch.jpg}
-\vfill
-\begin{table}
-                \centering
-                \begin{tabular}{r c}
-                        %\hline
-                        Type & R$_{ISME}$ / G$\ohm$ \\
-			\cline{1-2}
-			Liquid contact & \textbf{\textcolor{white!100}{\colorbox{red!100}{4.80}}} \\
-                        Solid contact &  \textbf{\textcolor{black!100}{\colorbox{green!100}{0.56}}} \\
-
-                \end{tabular}
-\end{table}
-\end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Comparison of the electrodes' performance}
-\framesubtitle{Experimental setup}
-\begin{center}
-\includegraphics[width=0.9\textwidth]{setup.eps}
-\end{center}
-\end{frame}
-
-\begin{frame}
-	\frametitle{Comparison of the electrodes' performance} 
-	\framesubtitle{Results}
-	\centering
-	\quad\quad\quad\quad Liquid contact \hfill Solid contact \quad\quad\quad\quad\quad
-
-	\includegraphics[trim = 10mm 30mm 0mm 20mm, clip, width=0.4\textwidth, angle=-90]{liquid_Mg.eps}\hfill\includegraphics[trim = 10mm 30mm 0mm 20mm, clip, width=0.4\textwidth, angle=-90]{solid_Mg.eps}
-\end{frame}
-
-\begin{frame}
-\frametitle{Application in corrosion science: galvanic corrosion of Mg}
-\framesubtitle{Experimental setup}
-\begin{center}
-\includegraphics[width=0.9\textwidth]{model.eps}
-\end{center}
-\end{frame}
 
 \begin{frame}
 	\frametitle{Application in corrosion science: galvanic corrosion of Mg} 
-	\framesubtitle{Results}
+	%\framesubtitle{Results}
 	\centering
 	\quad\quad\quad\quad Liquid contact \hfill Solid contact \quad\quad\quad\quad\quad
 
@@ -225,54 +147,6 @@ Optimizing scanning patterns and algorithms.
 	
 	\vfill
 \end{frame}
-
-\begin{frame}
-	\frametitle{Simulated SECM scans}	
-	\framesubtitle{Using the Cartesian and the polar coordinate system based algorithms}
-	\centering
-	\quad\quad\quad\quad\quad\quad Cartesian \hfill polar \quad\quad\quad\quad\quad\quad\quad\quad
-
-	\includegraphics[width=0.3\textwidth, angle=-90]{meander_sim.eps}\includegraphics[width=0.3\textwidth, angle=-90]{arc_sim.eps}
-	\vfill
-\end{frame}
-
-
-\begin{frame}
-	\frametitle{Comparison of the simulated scans}
-%Parameters of the simulations:\\
-%\begin{itemize}
-%\item 2000 $\upmu$m $\times$ 2000 $\upmu$m scan area,
-%\item 100 $\upmu$m $\times$ 100 $\upmu$m resolution,
-%\item 1 s for each data aquisition point,
-%\item 500 $\upmu$m/s probe positioning speed.
-%\end{itemize}
-
-%\vfill
-\begin{table}
-		\label{table:comp}
-		\centering
-		\begin{tabular}{r c c c}
-			Algorithm & n & time (s) & mean squared error \\
-			\hline
-			Meander & 441 & 440 & \textcolor{white!100}{\colorbox{red!100}{$2.75\times 10^{-2}$}} \\
-			Fast comb& 441 & 520  & \colorbox{white}{$2.07\times 10^{-2}$} \\
-			Comb & 441 & 881 & \colorbox{white}{$2.75\times 10^{-2}$} \\
-			Web & 110 & 109 & \colorbox{white}{$9.63\times 10^{-3}$} \\
-			Arc & 341 & 340 & \colorbox{green!100}{$2.95\times 10^{-3}$} \\
-		\end{tabular}
-\end{table}
-\end{frame}
-
-%\begin{frame}
-%\frametitle{Confirmation with experimental SECM scans}
-%\framesubtitle{Antimony microelectrode as pH sensor}
-%\centering
-%\begin{equation*}
-%    \ce{2Sb + 3H_2O <=> Sb_2O_3 + 6H^+ + 6e^-}
-%\end{equation*}
-%\includegraphics[width=0.7\textwidth]{antimony.eps}
-%\end{frame} 
-
 
 \begin{frame}
 	\centering
