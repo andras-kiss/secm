@@ -90,6 +90,16 @@
 \end{frame}
 
 \begin{frame}
+	\centering
+	\frametitle{Imaging distortion}
+	\framesubtitle{Using the meander algorithm}
+	\includegraphics[width=0.4\textwidth, angle=-90]{meander.eps}
+\end{frame}
+
+
+
+
+\begin{frame}
 	\frametitle{Why is it so important to complete the scan quickly?}
 	\framesubtitle{Example: corrosion of a magnesium alloy}
 	\includegraphics[width=1\textwidth]{timelapse.eps}\\
@@ -190,6 +200,13 @@ $E_{cell}(t) = E_{cell}(\infty) + [E_{cell}(0) - E_{cell}(\infty)]e^{-t/\tau}$\\
 \end{tikzpicture}
 \end{frame}
 
+\begin{frame}
+\frametitle{Demonstartion with a model system}
+\framesubtitle{Experimental setup}
+\begin{center}
+\includegraphics[width=0.9\textwidth]{model.eps}
+\end{center}
+\end{frame}
 
 \begin{frame}
 	\frametitle{Deconvolution of potentiometric SECM images}
@@ -241,6 +258,15 @@ $E_{cell}(t) = E_{cell}(\infty) + [E_{cell}(0) - E_{cell}(\infty)]e^{-t/\tau}$\\
 \end{frame}
 
 \begin{frame}
+\frametitle{Deconvolution of potentiometric SECM images}
+\framesubtitle{Experimental setup}
+\begin{center}
+\includegraphics[width=0.9\textwidth]{setup.eps}
+\end{center}
+\end{frame}
+
+
+\begin{frame}
 \begin{center}
 \frametitle{Deconvolution of potentiometric SECM images}
 \framesubtitle{Recorded using the magnesium ISME following the meander algorithm}
@@ -287,6 +313,8 @@ The effect of electric field on potentiometric SECM imaging.
 \end{frame}
 
 \begin{frame}
+\frametitle{Eliminating the effect of the electric field}
+\framesubtitle{By careful reference electrode positioning}
 \begin{figure}
 \centering
 \begin{tikzpicture}
@@ -297,6 +325,7 @@ The effect of electric field on potentiometric SECM imaging.
 \addlegendentry{Ref. electrode close}
 \end{axis}
 \end{tikzpicture}
+%\includegraphics[width=0.4\textwidth]{field.eps}
 %\caption{Potential of an Mg$^{2+}$ ISME situated at 100$~\upmu$m above the center of the AZ63 sample, as a function of time. 0--20$~$s$~$: spontaneous corrosion, 20--40$~$s$~$: galvanic corrosion, 40--60$~$$~$: spontaneous corrosion. During galvanic corrosion, the AZ63 sample was coupled to an Fe sample, with identical surface. Reference electrode was a miniature Ag/AgCl/(3 M). Red = the reference electrode is far from the measuring electrode. Blue = the reference electrode is close to the measuring electrode. ,,Close'' = as close as possible, ,,far'' $~\approx ~$1$~$cm. When both electrodes are located close above the AZ63 sample, the potentiometric cell is unaffected by the generated electric field. On the other hand, when the reference electrode is located far from the AZ63 surface, the electric field affects the two electrodes to a different extent, which shows up as the middle section (20--40$~$s) of the red curve.}
 \end{figure}
 \end{frame}
@@ -316,18 +345,14 @@ The effect of electric field on potentiometric SECM imaging.
 
 \begin{frame}
 \frametitle{Conclusions}
-\scriptsize
+\small
 \begin{enumerate}
 %\setcounter{enumi}{0}
-\item \textbf{I was the first to use deconvolution to reduce distortion in potentiometric SECM images.}
-To prove the validity of the technique, I have compared deconvoluted images to equilibrium images scanned at a rate which allowed to record equilibrium potentials.
+\item \textbf{Distortion in potentiometric SECM images can be reduced with deconvolution.}
+To prove the validity of the technique, deconvoluted images have been compared to equilibrium images scanned at a rate which allowed to record equilibrium potentials.
 
-\item \textbf{I have successfully used deconvolution to restore potentiometric SECM images about a corroding carbon steel sample.}
-Evaluation of this data was possible, because scanning time \emph{and} distortion was reduced at the same time.
-
-\item \textbf{I have successfully resolved the observed discrepancy in recent papers about impossibly high ion activities.}
+\item \textbf{The observed discrepancy in recent papers about impossibly high ion activities was resolved.}
 The electric field present in many studied systems -- galvanically corroding ones in particular -- has a direct influence on the measured potential.
-I have shown how big of an error can it cause.
 In the system I have studied, the error was almost four orders of magnitude.
 By taking this effect into account, a more accurate conclusion can be drawn.
 \end{enumerate}
